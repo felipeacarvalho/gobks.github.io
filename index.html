@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
     <title>Página Inicial - BKS</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
             <h2>BKS</h2>
             <p>Faça parte desta comunidade de Players de Marvel Rivals. Vamos competir, melhorar e dominar juntos!</p>
             <div class="button-row">
-                <button class="custom-button" style="--btn-color: #AD0606;">Conheça a Equipe</button>
+                <button class="custom-button" style="--btn-color: #AD0606;" onclick="document.getElementById('lineup-section').scrollIntoView({ behavior: 'smooth' });">Conheça a Equipe</button>
                 <button class="custom-button" style="--btn-color: #DB311A;">Jogue Conosco</button>
             </div>
         </div>
@@ -27,12 +28,107 @@
         </div>
     </div>
 
-    <div class="content-wrapper">
-        <div class="text-container" style="justify-items: center;">
-            <h2>Nossa Lineup</h2>
-            <p>Conheça nossos jogadores e coach que fazem o impossível acontecer:</p>
-        </div>
+    <div id="lineup-section">
+        <div class="content-wrapper-main">
+            <div class="text-container-main">
+                <h2>Nossa Lineup</h2>
+                <p>Conheça nossos jogadores e coach que fazem o impossível acontecer:</p>
+            </div>
 
+            <div class="gallery">
+                <div class="player-card">
+                    <img src="assets/Moon Knight/Moon_Knight_Default_Costume_LoC_Icon.webp" alt="Its_Kaiser">
+                    <p>Its_Kaiser</p>
+                    <p>Coach</p>
+                    <a href="https://x.com/Its_Kaiser_" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <img src="assets/Dr. Strange/Doctor_Strange_Default_Costume_LoC_Icon.webp" alt="Stabat">
+                    <p>Stabat</p>
+                    <p>Vanguarda</p>
+                    <a href="https://x.com/Stabat_Dior" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <img src="assets/Magneto/Magneto_Master_of_Magnetism_LoC_Icon.webp" alt="kaka1932">
+                    <p>kaka1932</p>
+                    <p>Vanguarda</p>
+                    <a href="https://x.com/kakahs__" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <img src="assets/Winter Soldier/Winter_Soldier_Revolution_LoC_Icon.webp" alt="subacoo">
+                    <p>subacoo</p>
+                    <p>Vanguarda / Duelista</p>
+                    <a href="https://x.com/subacoo_" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <img src="assets/Hela/Hela_Default_Costume_LoC_Icon.webp" alt="McCoy">
+                    <p>McCoy</p>
+                    <p>Duelista</p>
+                    <a href="https://x.com/clayssonraposo" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <img src="assets/Psylocke/Psylocke_Default_Costume_LoC_Icon.webp" alt="LawLietRep">
+                    <p>LawLietRep</p>
+                    <p>Duelista</p>
+                    <a href="" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <img src="assets/Jeff/Jeff_the_Land_Shark_Sunshine_Land_Shark_LoC_Icon.webp" alt="Proto1233">
+                    <p>Proto1233</p>
+                    <p>Duelista / Estrategista</p>
+                    <a href="https://x.com/proto1233mrv" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <img src="assets/Ultron/Ultron_Default_Costume_LoC_Icon.webp" alt="carmonao1">
+                    <p>carmonao1</p>
+                    <p>Estrategista</p>
+                    <a href="https://x.com/carmonao01" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <div class="lightning-frame">
+                        <img src="assets/Adam Warlock/Adam_Warlock_Blood_Soul_LoC_Icon.webp" alt="Felope">
+                    </div>
+                    <p>Felope</p>
+                    <p>Estrategista</p>
+                    <a href="https://x.com/felopeac" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="player-card">
+                    <img src="assets/Loki/Loki_Presidential_Attire_LoC_Icon.webp" alt="notbarao">
+                    <p>notbarao</p>
+                    <p>Estrategista</p>
+                    <a href="https://x.com/notbaraoo" target="_blank" class="x-button">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
