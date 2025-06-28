@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 h2 {
@@ -24,6 +24,61 @@ p {
     border: none;
     height: 5px;
     background-color: #9c1313;
+}
+
+#achievements-section {
+    background: linear-gradient(to bottom, #0e0e0b, #9c1313);
+}
+
+.achievement {
+  display: flex;
+  height: 160px;
+  width: 800px;
+  background-color: #1a1a1a;
+  border-radius: 80px 20px;
+  overflow: hidden;
+}
+
+.achievement-image {
+  flex: 0 0 auto;
+  width: 160px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-image::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #e9331b;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.achievement-image i {
+  font-size: 50px;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.achievement-text-container {
+  flex: 1;
+  align-items: center;
+  height: 100%;
+}
+
+.achievement-text-container h3 {
+    color: #eea826;
+    margin: 16px 0 0 0;
+    font-size: 36px;
+}
+
+.achievement-text-container p {
+    font-size: 18px;
 }
 
 .content-wrapper {
@@ -88,7 +143,7 @@ p {
 }
 
 .header-text {
-    color: #cb7125;
+    color: #eea826;
     padding-left: 20px;
 }
 
