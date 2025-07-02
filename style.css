@@ -218,3 +218,64 @@ p {
   background-color: #222222;
   color: #e9331b;
 }
+
+/* 
+########################
+## Tabela de Torneios ##
+########################
+*/
+
+.tournament-table {
+    width: 900px;
+    border-collapse: collapse;
+    margin: 0 auto 30px auto;
+    clip-path: polygon(
+      12px 0%, calc(100% - 12px) 0%,
+      100% 12px, 100% calc(100% - 12px),
+      calc(100% - 12px) 100%, 12px 100%,
+      0% calc(100% - 12px), 0% 12px
+    );
+    text-align: left;
+    color: white;
+}
+
+.tournament-table th {
+    background-color: #e9331b;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.tournament-table td {
+    background-color: #1a1a1a;
+    padding: 10px;
+    font-size: 16px;
+    border-top: 1px solid #333;
+}
+
+.tournament-table tr:hover td {
+  background-color: #2c2c2c;
+}
+
+/* 
+########################
+#### Caixa de Texto ####
+########################
+*/
+
+.text-box-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.text-box {
+    border: 2px solid #9c1313;
+    padding: 0 16px;
+    width: 500px;
+    clip-path: polygon(
+      12px 0%, calc(100% - 12px) 0%,
+      100% 12px, 100% calc(100% - 12px),
+      calc(100% - 12px) 100%, 12px 100%,
+      0% calc(100% - 12px), 0% 12px
+    );
+}
