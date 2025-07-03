@@ -226,6 +226,31 @@ p {
   color: #e9331b;
 }
 
+.twitch-button {
+  display: inline-flex;
+  align-items: center;
+
+  background-color: #272727;
+  color: white;
+
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.twitch-button i {
+  font-size: 20px;
+}
+
+.twitch-button:hover {
+  background-color: #222222;
+  color: #e9331b;
+}
+
 /* 
 ##############################
 ##### Tabela de Torneios #####
@@ -421,4 +446,14 @@ p {
     color: #bbb;
     font-size: 14px;
     margin: 0;
+}
+
+.supporter-info p{
+    font-size: 16px;
+}
+
+.supporter-button-row {
+    display: flex;
+    gap: 20px;
+
 }
