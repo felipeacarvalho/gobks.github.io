@@ -1,21 +1,22 @@
-const form = document.getElementById("join-form");
-const thankYou = document.getElementById("thank-you-message");
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("join-form");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  fetch(form.action, {
-    method: "POST",
-    body: new FormData(form),
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
-      thankYou.classList.add("show");
-      form.reset();  
-    } else {
-      alert("Ocorreu um erro. Tente novamente.");
-    }
-  }).catch(error => {
-    alert("Erro de rede. Verifique sua conexão.");
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        alert("✅ Obrigado pelo envio! Nossa equipe analisará sua proposta.");
+        form.reset();
+      } else {
+        alert("❌ Ocorreu um erro. Tente novamente.");
+      }
+    }).catch(error => {
+      alert("⚠️ Erro de rede. Verifique sua conexão.");
+    });
   });
 });

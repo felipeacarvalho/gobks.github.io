@@ -401,17 +401,6 @@ p {
     flex-direction: column;
 }
 
-#thank-you-message {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-#thank-you-message.show {
-  display: block;
-  opacity: 1;
-}
-
 /* 
 ##############################
 ####### Agradecimentos #######
