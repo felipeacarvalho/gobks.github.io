@@ -8,15 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
       method: "POST",
       body: new FormData(form),
       headers: { 'Accept': 'application/json' }
-    }).then(response => {
-      if (response.ok) {
-        alert("✅ Obrigado pelo envio! Nossa equipe analisará sua proposta.");
-        form.reset();
-      } else {
-        alert("❌ Ocorreu um erro. Tente novamente.");
-      }
-    }).catch(error => {
-      alert("⚠️ Erro de rede. Verifique sua conexão.");
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert("Obrigado pelo envio! Nossa equipe analisará sua proposta.");
+      form.reset();
+    })
+    .catch(() => {
+      alert("Ocorreu um erro. Tente novamente.");
     });
   });
 });
