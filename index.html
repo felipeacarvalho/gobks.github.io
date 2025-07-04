@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
+    <script src="form-handler.js" defer></script>
     <title>Página Inicial - BKS</title>
 </head>
 <body>
@@ -253,9 +254,13 @@
                     <textarea id="message" name="message" rows="4" placeholder="Conte mais sobre você"></textarea>
 
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://bksmr.com/#join-form-container">
+                    <input type="hidden" name="_next" value="">
 
                     <button type="submit">Enviar</button>
+
+                    <div id="thank-you-message" style="display: none; margin-top: 20px; color: #db311a;">
+                        Obrigado pelo envio! Nossa equipe analisará sua proposta.
+                    </div>
                 </form>
             </div>
         </div>

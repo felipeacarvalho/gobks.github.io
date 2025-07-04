@@ -401,6 +401,15 @@ p {
     flex-direction: column;
 }
 
+#thank-you-message {
+  font-size: 18px;
+  text-align: center;
+  padding: 16px;
+  background: #1a1a1a;
+  border: 1px solid #db311a;
+  border-radius: 8px;
+}
+
 /* 
 ##############################
 ####### Agradecimentos #######
