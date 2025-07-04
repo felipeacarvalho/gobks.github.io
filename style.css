@@ -20,7 +20,7 @@ p {
     font-size: 20px;
 }
 
-#red-line {
+.red-line {
     border: none;
     height: 5px;
     background-color: #9c1313;
@@ -115,7 +115,6 @@ p {
     justify-content: space-between;
     gap: 40px;
     padding: 0 40px;
-
 }
 
 .custom-button {
@@ -141,12 +140,18 @@ p {
 
 .text-container-main {
     text-align: center;
+    width: 800px;
 }
 
 .image-container {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+#header img {
+    position: relative;
+    top: 0.09em;
 }
 
 .header-text {
@@ -226,7 +231,8 @@ p {
   color: #e9331b;
 }
 
-.twitch-button {
+.media-button {
+  font-family: Arial, sans-serif;
   display: inline-flex;
   align-items: center;
 
@@ -242,11 +248,11 @@ p {
   transition: all 0.3s ease;
 }
 
-.twitch-button i {
+.media-button i {
   font-size: 20px;
 }
 
-.twitch-button:hover {
+.media-button:hover {
   background-color: #222222;
   color: #e9331b;
 }
@@ -322,7 +328,7 @@ p {
 ##############################
 */
 
-.join-form-container {
+#join-form-container {
     background-color: #1a1a1a;
     padding: 0 16px 30px 16px;
     border-radius: 12px;
@@ -332,7 +338,7 @@ p {
     margin-bottom: 30px;
 }
 
-.join-form-container h3 {
+#join-form-container h3 {
     text-align: center;
     font-size: 24px;
 }
@@ -403,9 +409,15 @@ p {
 
 #thanks-section {
     background: linear-gradient(to top, #0e0e0b, #9c1313);
+    margin-bottom: 30px;
 }
 
-.supporter-gallery {
+.supporter-container h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -413,6 +425,7 @@ p {
 }
 
 .supporter-card {
+    width: 360px;
     position: relative;
     background-color: #1a1a1a;
     color: white;
@@ -455,4 +468,16 @@ p {
 .supporter-button-row {
     display: flex;
     gap: 20px;
+}
+
+/* 
+##############################
+########### Rodapé ###########
+##############################
+*/
+
+#footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
 }
