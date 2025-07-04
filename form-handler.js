@@ -10,8 +10,8 @@ form.addEventListener("submit", function (e) {
     headers: { 'Accept': 'application/json' }
   }).then(response => {
     if (response.ok) {
-      form.style.display = "none";
-      thankYou.style.display = "block";
+      thankYou.classList.add("show");
+      form.reset();  
     } else {
       alert("Ocorreu um erro. Tente novamente.");
     }
