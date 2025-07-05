@@ -233,24 +233,28 @@
                 <div class="form-row">
                     <div class="form-group">
                     <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="Nome" required>
                     </div>
                     <div class="form-group">
                     <label for="contact">Email ou Id do Discord:</label>
-                    <input type="text" id="contact" name="contact" required>
+                    <input type="text" id="contact" name="Contato" required>
                     </div>
                 </div>
 
+                <div class="form-group">
                 <label for="role">Como deseja participar?</label>
-                <select id="role" name="role" required>
+                <select id="role" name="Tipo de participação" required>
                     <option value="" disabled selected>Selecione uma opção</option>
-                    <option value="team">Desejo fazer parte da equipe</option>
-                    <option value="training">Desejo jogar contra a BKS / sugerir scrimm</option>
-                    <option value="supporter">Desejo apoiar a comunidade / oferecer parceria</option>
+                    <option value="Participar do Time">Desejo fazer parte da equipe</option>
+                    <option value="Participar em Treinos">Desejo jogar contra a BKS / sugerir scrimm</option>
+                    <option value="Parceria / Patrocínio">Desejo apoiar a comunidade / oferecer parceria</option>
                 </select>
+                </div>
 
+                <div class="form-group">
                 <label for="message">Informações adicionais:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Conte mais sobre você"></textarea>
+                <textarea id="message" name="Mensagem" rows="4" placeholder="Conte mais sobre você"></textarea>
+                </div>
 
                 <input type="hidden" name="_captcha" value="false">
 

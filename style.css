@@ -397,6 +397,7 @@ p {
 
 .form-group {
     flex: 1;
+    margin: 5px;
     display: flex;
     flex-direction: column;
 }
