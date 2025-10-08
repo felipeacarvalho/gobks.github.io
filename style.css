@@ -218,6 +218,7 @@ p {
     font-weight: bold;
 }
 
+.player-card--editor   { --card-accent-start: #808080; --card-accent-end: #1a1a1a; }
 .player-card--coach   { --card-accent-start: #b6b6b6; --card-accent-end: #1a1a1a; }
 .player-card--vanguard  { --card-accent-start: #eea826; --card-accent-end: #1a1a1a; }
 .player-card--duelist  { --card-accent-start: #be2323; --card-accent-end: #1a1a1a; }
