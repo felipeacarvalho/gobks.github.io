@@ -124,6 +124,20 @@ p {
     padding: 0 40px;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .custom-button {
     background-color: var(--btn-color, #333);
     color: white;

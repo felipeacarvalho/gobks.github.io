@@ -9,7 +9,13 @@
 </head>
 <body>
     <div id="header">
-        <h1 class="header-text"><img src="assets/logoBKSLetras.png" alt="logoBKSLetras" height="60px"></h1>
+        <div class="row">
+            <img src="assets/logoBKSLetras.png" alt="logoBKSLetras" height="60px">
+            <div class="vertical-center">
+                <button class="custom-button" style="--btn-color: #AD0606;" onclick="document.getElementById('lineup-section').scrollIntoView({ behavior: 'smooth' });">Conheça a Equipe</button>
+                <button class="custom-button" style="--btn-color: #DB311A;" onclick="document.getElementById('join-form-container').scrollIntoView({ behavior: 'smooth' });">Jogue Conosco</button>
+            </div>
+        </div>
     </div>
     <hr class="red-line">
     
@@ -232,12 +238,16 @@
                 <form id="join-form" class="join-form" action="https://formsubmit.co/flpalmeidac@gmail.com" method="POST">
                 <div class="form-row">
                     <div class="form-group">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="Nome" required>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="Nome">
                     </div>
                     <div class="form-group">
-                    <label for="contact">Email ou Id do Discord:</label>
-                    <input type="text" id="contact" name="Contato" required>
+                        <label for="gameName">Nome dentro do jogo:</label>
+                        <input type="text" id="gameName" name="NomeJogo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Id do Discord:</label>
+                        <input type="text" id="contact" name="Contato" required>
                     </div>
                 </div>
 
