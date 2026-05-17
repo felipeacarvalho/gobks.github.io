@@ -371,6 +371,39 @@ p { font-size: 0.97rem; }
 .role-badge.duelist    { border-color: #be2323; color: #e05050; }
 .role-badge.strategist { border-color: #4197d1; color: #5aaee0; }
 
+/* filter button behaviour */
+.role-badge[data-filter] {
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s, transform 0.15s;
+  background: none;
+  border: 1px solid;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.role-badge[data-filter]:hover { transform: scale(1.05); }
+.role-badge[data-filter].inactive {
+  opacity: 0.28;
+  filter: grayscale(0.6);
+}
+
+/* ── Player image placeholder ── */
+.player-img-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: var(--surface2);
+  border: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 2.5rem;
+}
+
+/* ── Role filter hidden state ── */
+.player-card.role-hidden { display: none; }
+
 /* ── Tabs (lineups) ── */
 .tab-bar {
   display: flex;

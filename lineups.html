@@ -45,17 +45,17 @@
                 <p>Na BKS dividimos nossos jogadores em duas <em>lines</em> para melhor preparar os <em>players</em> e gerenciar a organização.</p>
             </div>
 
-            <!-- Role legend -->
+            <!-- Role filter badges -->
             <div class="role-legend">
-                <span class="role-badge vanguard">
+                <button class="role-badge vanguard" data-filter="vanguard" onclick="toggleRole('vanguard', this)">
                     <img src="assets/General/Vanguard_Icon.webp" alt=""> Vanguarda
-                </span>
-                <span class="role-badge duelist">
+                </button>
+                <button class="role-badge duelist" data-filter="duelist" onclick="toggleRole('duelist', this)">
                     <img src="assets/General/Duelist_Icon.webp" alt=""> Duelista
-                </span>
-                <span class="role-badge strategist">
+                </button>
+                <button class="role-badge strategist" data-filter="strategist" onclick="toggleRole('strategist', this)">
                     <img src="assets/General/Strategist_Icon.webp" alt=""> Estrategista
-                </span>
+                </button>
             </div>
 
             <!-- Tab switcher -->
@@ -71,93 +71,51 @@
                 </div>
                 <div class="player-gallery">
 
-                    <div class="player-card player-card--vanguard">
-                        <img src="assets/Dr. Strange/Doctor_Strange_Default_Costume_LoC_Icon.webp" alt="Stabat">
-                        <p class="player-name">#Stabat</p>
-                        <p class="player-role">Vanguarda</p>
-                        <a href="https://x.com/Stabat_Dior" target="_blank" class="media-button">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </div>
-
-                    <div class="player-card player-card--vanguard">
+                    <div class="player-card player-card--vanguard" data-role="vanguard">
                         <img src="assets/Magneto/Magneto_Master_of_Magnetism_LoC_Icon.webp" alt="kaka1932">
-                        <p class="player-name">#kaka1932</p>
+                        <p class="player-name"># kaka1932</p>
                         <p class="player-role">Vanguarda</p>
                         <a href="https://x.com/kakahs__" target="_blank" class="media-button">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
                     </div>
 
-                    <div class="player-card player-card--vanguard">
+                    <div class="player-card player-card--vanguard" data-role="vanguard">
                         <img src="assets/Venom/Venom_Lingering_Imprint_LoC_Icon.webp" alt="MuriloWolf">
-                        <p class="player-name">#MuriloWolf</p>
+                        <p class="player-name"># MuriloWolf</p>
                         <p class="player-role">Vanguarda</p>
                     </div>
 
-                    <div class="player-card player-card--duelist">
+                    <div class="player-card player-card--duelist" data-role="duelist">
                         <img src="assets/Psylocke/Psylocke_Default_Costume_LoC_Icon.webp" alt="LawLietRep">
-                        <p class="player-name">#LawLietRep</p>
+                        <p class="player-name"># LawLietRep</p>
                         <p class="player-role">Duelista</p>
                         <a href="https://x.com/LawLietRep" target="_blank" class="media-button">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
                     </div>
 
-                    <div class="player-card player-card--duelist">
-                        <img src="assets/Phoenix/Phoenix_Chaos_Phoenix_LoC_Icon.webp" alt="Pégasus">
-                        <p class="player-name">#Pégasus</p>
+                    <div class="player-card player-card--duelist" data-role="duelist">
+                        <img src="" alt="Zmigass">
+                        <p class="player-name"># Zmigass</p>
                         <p class="player-role">Duelista</p>
-                        <a href="https://x.com/Pegasusbks" target="_blank" class="media-button">
+                        <a href="https://x.com/zmigasmr" target="_blank" class="media-button">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
                     </div>
 
-                    <div class="player-card player-card--duelist">
-                        <img src="assets/Psylocke/Psylocke_Breezy_Butterfly_LoC_Icon.webp" alt="YamadaIGL">
-                        <p class="player-name">#YamadaIGL</p>
-                        <p class="player-role">Duelista</p>
-                        <a href="https://x.com/YamadaIGL" target="_blank" class="media-button">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </div>
-
-                    <div class="player-card player-card--strategist">
-                        <img src="assets/Jeff/Jeff_the_Land_Shark_Sunshine_Land_Shark_LoC_Icon.webp" alt="Proto1233">
-                        <p class="player-name">#Proto1233</p>
-                        <p class="player-role">Estrategista</p>
-                        <a href="https://x.com/proto1233mrv" target="_blank" class="media-button">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </div>
-
-                    <div class="player-card player-card--strategist">
-                        <img src="assets/Adam Warlock/Adam_Warlock_Blood_Soul_LoC_Icon.webp" alt="Felope">
-                        <p class="player-name">#Felope</p>
-                        <p class="player-role">Estrategista</p>
-                        <a href="https://x.com/felopeac" target="_blank" class="media-button">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </div>
-
-                    <div class="player-card player-card--strategist">
+                    <div class="player-card player-card--strategist" data-role="strategist">
                         <img src="assets/Loki/Loki_Tidal_Trickery_LoC_Icon.webp" alt="notbarao">
-                        <p class="player-name">#notbarao</p>
+                        <p class="player-name"># notbarao</p>
                         <p class="player-role">Estrategista</p>
                         <a href="https://x.com/notbaraoo" target="_blank" class="media-button">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
                     </div>
 
-                    <div class="player-card player-card--strategist">
+                    <div class="player-card player-card--strategist" data-role="strategist">
                         <img src="assets/Invisible Woman/Invisible_Woman_Malice_LoC_Icon.webp" alt="Sleek">
-                        <p class="player-name">#Sleek</p>
-                        <p class="player-role">Estrategista</p>
-                    </div>
-
-                    <div class="player-card player-card--strategist">
-                        <img src="assets/Luna Snow/Luna_Snow_Shining_Star_LoC_Icon.webp" alt="Malosti">
-                        <p class="player-name">#Malosti</p>
+                        <p class="player-name"># Sleek</p>
                         <p class="player-role">Estrategista</p>
                     </div>
 
@@ -171,34 +129,70 @@
                 </div>
                 <div class="player-gallery">
 
-                    <div class="player-card player-card--tbd">
-                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
-                        <p class="player-name">Em breve</p>
+                    <div class="player-card player-card--vanguard" data-role="vanguard">
+                        <img src="" alt="Coronel">
+                        <p class="player-name"># Coronel</p>
+                        <p class="player-role">Vanguarda</p>
+                        <a href="https://x.com/" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
                     </div>
 
-                    <div class="player-card player-card--tbd">
-                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
-                        <p class="player-name">Em breve</p>
+                    <div class="player-card player-card--vanguard" data-role="vanguard">
+                        <img src="assets/Jeff/Jeff_the_Land_Shark_Sunshine_Land_Shark_LoC_Icon.webp" alt="Proto1233">
+                        <p class="player-name"># Proto1233</p>
+                        <p class="player-role">Vanguarda</p>
+                        <a href="https://x.com/proto1233mrv" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
                     </div>
 
-                    <div class="player-card player-card--tbd">
-                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
-                        <p class="player-name">Em breve</p>
+                    <div class="player-card player-card--duelist" data-role="duelist">
+                        <img src="" alt="Akira">
+                        <p class="player-name"># Akira</p>
+                        <p class="player-role">Duelista</p>
+                        <a href="https://x.com/yk1r4" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
                     </div>
 
-                    <div class="player-card player-card--tbd">
-                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
-                        <p class="player-name">Em breve</p>
+                    <div class="player-card player-card--duelist" data-role="duelist">
+                        <img src="" alt="Deadzera">
+                        <p class="player-name"># Deadzera</p>
+                        <p class="player-role">Duelista</p>
+                        <a href="https://x.com/DeadZerafps" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
                     </div>
 
-                    <div class="player-card player-card--tbd">
-                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
-                        <p class="player-name">Em breve</p>
+                    <div class="player-card player-card--duelist" data-role="duelist">
+                        <img src="assets/Phoenix/Phoenix_Chaos_Phoenix_LoC_Icon.webp" alt="Pégasus">
+                        <p class="player-name"># Pégasus</p>
+                        <p class="player-role">Duelista</p>
+                        <a href="https://x.com/Pegasusbks" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
                     </div>
 
-                    <div class="player-card player-card--tbd">
-                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
-                        <p class="player-name">Em breve</p>
+                    <div class="player-card player-card--strategist" data-role="strategist">
+                        <img src="" alt="Marco">
+                        <p class="player-name"># Marco</p>
+                        <p class="player-role">Estrategista</p>
+                        <a href="https://x.com/MarcoRivals" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--strategist" data-role="strategist">
+                        <img src="assets/Luna Snow/Luna_Snow_Shining_Star_LoC_Icon.webp" alt="Malosti">
+                        <p class="player-name"># Malosti</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+
+                    <div class="player-card player-card--strategist" data-role="strategist">
+                        <img src="" alt="Morgan">
+                        <p class="player-name"># Morgan</p>
+                        <p class="player-role">Estrategista</p>
                     </div>
 
                 </div>
@@ -214,12 +208,51 @@
     </footer>
 
     <script>
+        // ── Tab switching ──
         function switchTab(name, btn) {
             document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
             document.getElementById('tab-' + name).classList.add('active');
             btn.classList.add('active');
+            applyFilter();
         }
+
+        // ── Role filter ──
+        const activeRoles = new Set(['vanguard', 'duelist', 'strategist']);
+
+        function toggleRole(role, btn) {
+            if (activeRoles.has(role)) {
+                activeRoles.delete(role);
+                btn.classList.add('inactive');
+            } else {
+                activeRoles.add(role);
+                btn.classList.remove('inactive');
+            }
+            applyFilter();
+        }
+
+        function applyFilter() {
+            document.querySelectorAll('.player-card[data-role]').forEach(card => {
+                card.classList.toggle('role-hidden', !activeRoles.has(card.dataset.role));
+            });
+        }
+
+        // ── Image placeholders ──
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.player-card img').forEach(img => {
+                const show = () => {
+                    const placeholder = document.createElement('div');
+                    placeholder.className = 'player-img-placeholder';
+                    placeholder.innerHTML = '<i class="fa-solid fa-user"></i>';
+                    img.replaceWith(placeholder);
+                };
+                if (img.getAttribute('src') === '') {
+                    show();
+                } else {
+                    img.addEventListener('error', show, { once: true });
+                }
+            });
+        });
     </script>
 
 </body>
