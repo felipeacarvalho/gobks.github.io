@@ -1,477 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new_style.css">
     <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
-    <title>Página Inicial - BKS</title>
+    <title>BKS Esports - Início</title>
 </head>
 
 <body>
-    <div id="header">
-        <div class="row">
-            <img src="assets/logoBKSLetras.png" alt="logoBKSLetras" height="60px">
-            <!--<div class="vertical-center">
-                <button class="custom-button" style="--btn-color: #AD0606;"
-                    onclick="document.getElementById('lineup-section').scrollIntoView({ behavior: 'smooth' });">Conheça
-                    a Equipe</button>
-                <button class="custom-button" style="--btn-color: #DB311A;"
-                    onclick="document.getElementById('join-form-container').scrollIntoView({ behavior: 'smooth' });">Jogue
-                    Conosco</button>
-            </div>-->
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <img src="assets/logoBKSLetras.png" alt="BKS Esports">
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link active">Início</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        <i class="fa-solid fa-caret-down"></i> Conheça a BKS
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="lineups.html">Elencos</a>
+                    </div>
+                </div>
+                <a href="form.html" class="btn-nav">Jogue Conosco</a>
+            </nav>
         </div>
-    </div>
+    </header>
+
     <hr class="red-line">
 
-    <div id="bks-section">
-        <div class="content-wrapper">
-            <div class="text-container">
-                <p>Faça parte desta comunidade de Players de Marvel Rivals. Vamos competir, melhorar e dominar juntos!
-                </p>
-                <div class="button-row">
-                    <button class="custom-button" style="--btn-color: #AD0606;"
-                        onclick="document.getElementById('lineup-section').scrollIntoView({ behavior: 'smooth' });">Conheça
-                        a Equipe</button>
-                    <button class="custom-button" style="--btn-color: #DB311A;"
-                        onclick="document.getElementById('join-form-container').scrollIntoView({ behavior: 'smooth' });">Jogue
-                        Conosco</button>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i> Marvel Rivals &middot; Time Competitivo
+                </div>
+                <h1>Domine o Campo de Batalha</h1>
+                <p>Faça parte desta comunidade de Players de Marvel Rivals. Vamos competir, melhorar e dominar juntos!</p>
+                <div class="hero-actions">
+                    <a href="lineups.html" class="btn btn-primary">Conheça a Equipe</a>
+                    <a href="form.html" class="btn btn-secondary">Jogue Conosco</a>
                 </div>
             </div>
-
-            <div class="image-container">
-                <img src="assets/iconBKS.png" width="150px">
-            </div>
-        </div>
-    </div>
-
-    <div id="lineup-section">
-        <div class="content-wrapper-main">
-            <div class="text-container-main">
-                <h2>Nossa Lineup</h2>
-                <p>Conheça nossos jogadores que fazem o impossível acontecer:</p>
-            </div>
-
-            <div class="player-gallery">
-                <div class="player-card player-card--vanguard">
-                    <img src="assets/Dr. Strange/Doctor_Strange_Default_Costume_LoC_Icon.webp" alt="Stabat">
-                    <p>#Stabat</p>
-                    <p>Vanguarda</p>
-                    <a href="https://x.com/Stabat_Dior" target="_blank" class="x-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-
-                <div class="player-card player-card--vanguard">
-                    <img src="assets/Magneto/Magneto_Master_of_Magnetism_LoC_Icon.webp" alt="kaka1932">
-                    <p>#kaka1932</p>
-                    <p>Vanguarda</p>
-                    <a href="https://x.com/kakahs__" target="_blank" class="x-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-
-                <div class="player-card player-card--vanguard">
-                    <img src="assets/Venom/Venom_Lingering_Imprint_LoC_Icon.webp" alt="MuriloWolf">
-                    <p>#MuriloWolf</p>
-                    <p>Vanguarda</p>
-                </div>
-
-                <div class="player-card player-card--duelist">
-                    <img src="assets/Psylocke/Psylocke_Default_Costume_LoC_Icon.webp" alt="LawLietRep">
-                    <p>#LawLietRep</p>
-                    <p>Duelista</p>
-                    <a href="https://x.com/LawLietRep" target="_blank" class="x-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-
-                <div class="player-card player-card--duelist">
-                    <img src="assets/Phoenix/Phoenix_Chaos_Phoenix_LoC_Icon.webp" alt="Pégasus">
-                    <p>#Pégasus</p>
-                    <p>Duelista</p>
-                    <a href="https://x.com/Pegasusbks" target="_blank" class="x-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-
-                <div class="player-card player-card--duelist">
-                    <img src="assets/Psylocke/Psylocke_Breezy_Butterfly_LoC_Icon.webp" alt="Proto1233">
-                    <p>#YamadaIGL</p>
-                    <p>Duelista</p>
-                    <a href="https://x.com/YamadaIGL" target="_blank" class="x-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-
-                <div class="player-card player-card--strategist">
-                    <img src="assets/Jeff/Jeff_the_Land_Shark_Sunshine_Land_Shark_LoC_Icon.webp" alt="Proto1233">
-                    <p>#Proto1233</p>
-                    <p>Estrategista</p>
-                    <a href="https://x.com/proto1233mrv" target="_blank" class="x-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-
-                <div class="player-card player-card--strategist">
-                    <img src="assets/Adam Warlock/Adam_Warlock_Blood_Soul_LoC_Icon.webp" alt="Felope">
-                    <p>#Felope</p>
-                    <p>Estrategista</p>
-                    <a href="https://x.com/felopeac" target="_blank" class="x-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-
-                <div class="player-card player-card--strategist">
-                    <img src="assets/Loki/Loki_Tidal_Trickery_LoC_Icon.webp" alt="notbarao">
-                    <p>#notbarao</p>
-                    <p>Estrategista</p>
-                    <a href="https://x.com/notbaraoo" target="_blank" class="x-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </div>
-
-                <div class="player-card player-card--strategist">
-                    <img src="assets/Invisible Woman/Invisible_Woman_Malice_LoC_Icon.webp" alt="Sleek">
-                    <p>#Sleek</p>
-                    <p>Estrategista</p>
-                </div>
-
-                <div class="player-card player-card--strategist">
-                    <img src="assets/Luna Snow/Luna_Snow_Shining_Star_LoC_Icon.webp" alt="Malosti">
-                    <p>#Malosti</p>
-                    <p>Estrategista</p>
-                </div>
-
+            <div class="hero-image">
+                <img src="assets/iconBKS.png" alt="BKS">
             </div>
         </div>
-    </div>
+    </section>
 
-    <!--
-    <div id="achievements-section">
-        <div class="content-wrapper-main">
-            <div class="text-container-main">
-                <h2>Nossas Conquistas</h2>
-                <p>Veja algumas de nossas conquistas e méritos durante a jornada: </p>
-            </div>
-            <div class="achievement">
-                <span class="achievement-image">
-                    <i class="fa-solid fa-trophy"></i>
-                </span>
-                <span class="achievement-text-container">
-                    <h3>Colocação</h3>
-                    <p>Time <strong>terceiro colocado</strong> na edição #2  do torneio <strong>Marvel Rivals Arena</strong></p>
-                </span>
+    <!-- ABOUT -->
+    <section class="section" id="about-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Nossa equipe</span>
+                <h2>Sobre a BKS</h2>
+                <p>Conheça mais sobre o time e de como pode fazer parte dessa história.</p>
             </div>
 
-            <div class="achievement">
-                <span class="achievement-image">
-                    <i class="fa-solid fa-award"></i>
-                </span>
-                <span class="achievement-text-container">
-                    <h3>Vitórias</h3>
-                    <p><strong>Oito vitórias totais</strong> na primeira fase das Classificatórias Livres do <strong>Marvel Rivals Championship</strong></p>
-                </span>
-            </div>
-        </div>
-        
-        <div class="content-wrapper-main">
-            <div class="text-container-main">
-                <h2>Histórico de Campeonatos</h2>
-            </div>
-            <div class="tournament-list">
-                <table class="tournament-table">
-                    <thead>
-                        <tr>
-                            <th>Torneio</th>
-                            <th>Data</th>
-                            <th>Colocação</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Marvel Rivals Arena Edição #2</td>
-                            <td>Maio/2025</td>
-                            <td>3º Lugar</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    -->
-
-    <div id="about-section">
-        <div class="content-wrapper-main">
-            <div class="text-container-main">
-                <h2>Sobre a Equipe</h2>
-                <p>Conheça mais sobre o time e de como pode fazer parte dessa história: </p>
-            </div>
-            <div class="text-box-container">
+            <div class="text-grid">
                 <div class="text-box">
                     <h3>Nossa História</h3>
-                    <p>
-                        A equipe foi fundada em maio de 2025 por jogadores apaixonados por Marvel Rivals, inicialmente
-                        apenas para diversão. Ao passar do tempo decidimos elevar nossa <em>gameplay</em>.
-                    </p>
-                    <p>
-                        Hoje nossa equipe conta com uma melhor organização e processos, tendo melhorado, crescido e se
-                        aproximado como um time.
-                    </p>
-                    <p>
-                        Nossa <em>lineup</em> mudou, cresceu e se adaptou, hoje contamos com nove players e nosso coach,
-                        que nos ajuda a criar e refinar estratégias e trabalho em equipe.
-                    </p>
+                    <p>A equipe foi fundada em maio de 2025 por jogadores apaixonados por Marvel Rivals, inicialmente apenas para diversão.</p>
+                    <p>Ao passar do tempo decidimos elevar nossa <em>gameplay</em>. Hoje contamos com uma melhor organização, tendo melhorado, crescido e nos aproximado como um time.</p>
+                    <p>Nossa <em>lineup</em> mudou, cresceu e se adaptou — hoje contamos com dois elencos e nossos coaches que nos ajudam a criar e refinar estratégias.</p>
                 </div>
 
                 <div class="text-box">
                     <h3>Nossos Objetivos</h3>
-                    <p>
-                        Temos como missão fortalecer a comunidade de jogadores e fãs de Marvel Rivals, enquanto
-                        melhoramos e competimos no cenário mais alto possível
-                    </p>
-                    <p>
-                        Alguns de nossos outros objetivos são:
+                    <p>Temos como missão fortalecer a comunidade de jogadores e fãs de Marvel Rivals, enquanto melhoramos e competimos no cenário mais alto possível.</p>
                     <ul>
                         <li>Ganhar notoriedade no cenário.</li>
                         <li>Melhorar continuamente nossas habilidades.</li>
                         <li>Competir em torneios e representar a equipe e os fãs.</li>
                         <li>Crescer nossa comunidade.</li>
                     </ul>
-                    </p>
-                    <p>
-                        Seja você um jogador casual, competitivo ou fã, há um lugar para você aqui!
-                    </p>
-
+                    <p>Seja você um jogador casual, competitivo ou fã — há um lugar para você aqui!</p>
                 </div>
             </div>
-            <div id="join-form-container">
-                <h3>Faça parte do nosso jogo</h3>
-                <p>Preencha o formulário abaixo para se candidatar a participar do time, treinos ou apoiar nossa
-                    comunidade.</p>
 
-                <form id="join-form" class="join-form" action="https://formsubmit.co/flpalmeidac@gmail.com"
-                    method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Nome:</label>
-                            <input type="text" id="name" name="Nome">
-                        </div>
-                        <div class="form-group">
-                            <label for="gameName">Nome dentro do jogo:</label>
-                            <input type="text" id="gameName" name="NomeJogo" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="contact">Id do Discord:</label>
-                            <input type="text" id="contact" name="Contato" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="city">Sua cidade:</label>
-                                <input type="text" id="city" name="Cidade">
-                            </div>
-                            <div class="form-group">
-                                <label for="country">Seu país:</label>
-                                <input type="text" id="country" name="Pais" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="role">Como deseja participar?</label>
-                        <select id="role" name="Tipo de participação" required>
-                            <option value="" disabled selected>Selecione uma opção</option>
-                            <option value="Participar do Time">Desejo fazer parte da equipe</option>
-                            <option value="Participar em Treinos">Desejo jogar contra a BKS / sugerir scrimm</option>
-                            <option value="Parceria / Patrocínio">Desejo apoiar a comunidade / oferecer parceria
-                            </option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Informações adicionais:</label>
-                        <textarea id="message" name="Mensagem" rows="4" placeholder="Conte mais sobre você"></textarea>
-                    </div>
-
-                    <button type="submit">Enviar</button>
-                </form>
-
-                <script>
-                    document.querySelector('form').addEventListener('submit', function (e) {
-                        e.preventDefault();
-                        const formData = new FormData(this);
-                        fetch(this.action, {
-                            method: 'POST',
-                            body: formData
-                        }).then(() => alert("Obrigado pelo envio! Nossa equipe analisará sua proposta."));
-                        setTimeout(() => {
-                            this.reset();
-                        }, 1000);
-                    });
-                </script>
+            <div class="form-cta-box">
+                <h3>Quer Fazer Parte?</h3>
+                <p>Preencha nosso formulário para se candidatar ao time, sugerir um scrimm ou propor uma parceria.</p>
+                <a href="form.html" class="btn btn-primary">
+                    Acessar Formulário <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="thanks-section">
-        <div class="content-wrapper-main">
-            <div class="text-container-main">
+    <!-- THANKS -->
+    <section class="section" id="thanks-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Agradecimentos</span>
                 <h2>Obrigado!</h2>
-                <p>Não estaríamos aqui sem o suporte, ajuda e dicas dessas incríveis pessoas, grupos e organizações:
-                </p>
+                <p>Não estaríamos aqui sem o suporte, ajuda e dicas dessas incríveis pessoas, grupos e organizações.</p>
             </div>
 
-            <div class="supporter-gallery">
-                <div class="supporter-container">
-                    <h2>Criadores de Conteúdo</h2>
-                    <div class="card-container">
-                        <div class="supporter-card">
-                            <div class="supporter-header">
-                                <div class="image">
-                                    <img src="assets\supporter-images\contatoNerd.jpg" alt="contatoNerd"
-                                        class="circle-image">
-                                </div>
-                                <div class="text">
-                                    <h3>Contato Nerd</h3>
-                                    <p>Host, Caster, Streamer e Youtuber</p>
-                                </div>
-                            </div>
-                            <div class="supporter-info">
-                                <p>Apoiador do time, host do nosso primeiro campeonato e comentarista durante as
-                                    transmissões oficiais.</p>
-                                <div class="supporter-button-row">
-                                    <a href="https://www.twitch.tv/marvelrivalsbrazuka" target="_blank"
-                                        class="media-button">
-                                        <i class="fa-brands fa-twitch"></i>
-                                    </a>
-                                    <a href="https://www.youtube.com/@marvelrivalsbrazuka" target="_blank"
-                                        class="media-button">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
+            <span class="sub-label">Criadores de Conteúdo</span>
+            <div class="supporter-grid">
+                <div class="supporter-card">
+                    <div class="supporter-header">
+                        <img src="assets/supporter-images/contatoNerd.jpg" alt="Contato Nerd" class="circle-image">
+                        <div class="info">
+                            <h3>Contato Nerd</h3>
+                            <p>Host, Caster, Streamer e Youtuber</p>
                         </div>
-
-                        <div class="supporter-card">
-                            <div class="supporter-header">
-                                <div class="image">
-                                    <img src="assets\supporter-images\donosDoRivals.jpeg" alt="donosDoRivals"
-                                        class="circle-image">
-                                </div>
-                                <div class="text">
-                                    <h3>Donos do Rivals</h3>
-                                    <p>Grupo de Hosts, Casters, Streamers e Youtubers</p>
-                                </div>
-                            </div>
-                            <div class="supporter-info">
-                                <p>Canal de cobertura de campeonatos em que a BKS participou, prestando também apoio ao
-                                    time.</p>
-                                <div class="supporter-button-row">
-
-                                    <a href="https://www.youtube.com/@DonosdoRivals" target="_blank"
-                                        class="media-button">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="supporter-body">
+                        <p>Apoiador do time, host do nosso primeiro campeonato e comentarista durante as transmissões oficiais.</p>
+                        <div class="supporter-links">
+                            <a href="https://www.twitch.tv/marvelrivalsbrazuka" target="_blank" class="media-button"><i class="fa-brands fa-twitch"></i></a>
+                            <a href="https://www.youtube.com/@marvelrivalsbrazuka" target="_blank" class="media-button"><i class="fa-brands fa-youtube"></i></a>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="supporter-card">
-                            <div class="supporter-header">
-                                <div class="image">
-                                    <img src="assets\supporter-images\lariex.png" alt="lariex" class="circle-image">
-                                </div>
-                                <div class="text">
-                                    <h3>Lariex</h3>
-                                    <p>Streamer e Youtuber</p>
-                                </div>
-                            </div>
-                            <div class="supporter-info">
-                                <p>Criadora de conteúdo que esteve com a BKS desde o início, jogando com a equipe no
-                                    lançamento do jogo.</p>
-                                <div class="supporter-button-row">
-                                    <a href="https://www.twitch.tv/lariex" target="_blank" class="media-button">
-                                        <i class="fa-brands fa-twitch"></i>
-                                    </a>
-                                    <a href="https://www.youtube.com/@Lariex" target="_blank" class="media-button">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
+                <div class="supporter-card">
+                    <div class="supporter-header">
+                        <img src="assets/supporter-images/donosDoRivals.jpeg" alt="Donos do Rivals" class="circle-image">
+                        <div class="info">
+                            <h3>Donos do Rivals</h3>
+                            <p>Hosts, Casters, Streamers e Youtubers</p>
+                        </div>
+                    </div>
+                    <div class="supporter-body">
+                        <p>Canal de cobertura de campeonatos em que a BKS participou, prestando também apoio ao time.</p>
+                        <div class="supporter-links">
+                            <a href="https://www.youtube.com/@DonosdoRivals" target="_blank" class="media-button"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="supporter-card">
+                    <div class="supporter-header">
+                        <img src="assets/supporter-images/lariex.png" alt="Lariex" class="circle-image">
+                        <div class="info">
+                            <h3>Lariex</h3>
+                            <p>Streamer e Youtuber</p>
+                        </div>
+                    </div>
+                    <div class="supporter-body">
+                        <p>Criadora de conteúdo que esteve com a BKS desde o início, jogando com a equipe no lançamento do jogo.</p>
+                        <div class="supporter-links">
+                            <a href="https://www.twitch.tv/lariex" target="_blank" class="media-button"><i class="fa-brands fa-twitch"></i></a>
+                            <a href="https://www.youtube.com/@Lariex" target="_blank" class="media-button"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="supporter-gallery">
-                <div class="supporter-container">
-                    <h2>Times Parceiros</h2>
-                    <div class="card-container" style="grid-template-columns: repeat(2, 1fr);">
-                        <div class="supporter-card">
-                            <div class="supporter-header">
-                                <div class="image">
-                                    <img src="assets/supporter-images/teamNexus.png" alt="teamNexus"
-                                        class="circle-image">
-                                </div>
-                                <div class="text">
-                                    <h3>Team Nexus</h3>
-                                    <p>Time Competitivo</p>
-                                </div>
-                            </div>
-                            <div class="supporter-info">
-                                <p>Time parceiro e rival em treinamentos e que auxilía nas reviews de VODs e partidas.
-                                </p>
-                            </div>
+            <span class="sub-label">Times Parceiros</span>
+            <div class="supporter-grid" style="max-width: 660px; margin-bottom: 56px;">
+                <div class="supporter-card">
+                    <div class="supporter-header">
+                        <img src="assets/supporter-images/teamNexus.png" alt="Team Nexus" class="circle-image">
+                        <div class="info">
+                            <h3>Team Nexus</h3>
+                            <p>Time Competitivo</p>
                         </div>
+                    </div>
+                    <div class="supporter-body">
+                        <p>Time parceiro e rival em treinamentos que auxilia nas reviews de VODs e partidas.</p>
+                    </div>
+                </div>
 
-                        <div class="supporter-card">
-                            <div class="supporter-header">
-                                <div class="image">
-                                    <img src="assets/supporter-images/pucCampinasCardinals.png" alt="pucCardinals"
-                                        class="circle-image">
-                                </div>
-                                <div class="text">
-                                    <h3>PUC Cardinals</h3>
-                                    <p>Time Competitivo</p>
-                                </div>
-                            </div>
-                            <div class="supporter-info">
-                                <p>Time parceiro e rival em treinamentos.</p>
-                            </div>
+                <div class="supporter-card">
+                    <div class="supporter-header">
+                        <img src="assets/supporter-images/pucCampinasCardinals.png" alt="PUC Cardinals" class="circle-image">
+                        <div class="info">
+                            <h3>PUC Cardinals</h3>
+                            <p>Time Competitivo</p>
                         </div>
+                    </div>
+                    <div class="supporter-body">
+                        <p>Time parceiro e rival em treinamentos.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="text-container-main">
-                <h2>Um Obrigado Especial.</h2>
-                <p>Por fim, um muito obrigado a todos que nos acompanham nessa jornada e torcem e vibram pelo time
-                    durante as partidas. Por seu apoio nos dedicamos a melhorar!</p>
-                <div class="button-row" style="gap: 20px; justify-content: center;">
-                    <a href="https://discord.gg/2Ew5rmCx7S" target="_blank" class="media-button">
-                        <i class="fa-brands fa-discord"></i>
-                    </a>
-
-                    <a href="https://x.com/bks_esportsmr" target="_blank" class="media-button">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/bks_esportsmr/" target="_blank" class="media-button">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+            <div class="center">
+                <h2 style="margin-bottom: 10px;">Um Obrigado Especial.</h2>
+                <p style="color: var(--text-muted); margin-bottom: 24px;">Por fim, um muito obrigado a todos que nos acompanham nessa jornada e torcem pelo time durante as partidas.</p>
+                <div class="social-bar">
+                    <a href="https://discord.gg/2Ew5rmCx7S" target="_blank" class="media-button"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://x.com/bks_esportsmr" target="_blank" class="media-button"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/bks_esportsmr/" target="_blank" class="media-button"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
     <hr class="red-line">
 
-    <div id="footer">
-        <img src="assets/iconBKSGray.png" alt="letrasBKSCinza" width="100px">
-    </div>
+    <footer id="footer">
+        <img src="assets/iconBKSGray.png" alt="BKS Esports" width="80px">
+    </footer>
+
 </body>
 
 </html>

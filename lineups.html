@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new_style.css">
+    <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
+    <title>Elencos - BKS Esports</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <img src="assets/logoBKSLetras.png" alt="BKS Esports">
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Início</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        <i class="fa-solid fa-caret-down"></i> Conheça a BKS
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="lineups.html">Elencos</a>
+                    </div>
+                </div>
+                <a href="form.html" class="btn-nav">Jogue Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <hr class="red-line">
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">BKS Esports</span>
+                <h2>Nossos Elencos</h2>
+                <p>Na BKS dividimos nossos jogadores em duas <em>lines</em> para melhor preparar os <em>players</em> e gerenciar a organização.</p>
+            </div>
+
+            <!-- Role legend -->
+            <div class="role-legend">
+                <span class="role-badge vanguard">
+                    <img src="assets/General/Vanguard_Icon.webp" alt=""> Vanguarda
+                </span>
+                <span class="role-badge duelist">
+                    <img src="assets/General/Duelist_Icon.webp" alt=""> Duelista
+                </span>
+                <span class="role-badge strategist">
+                    <img src="assets/General/Strategist_Icon.webp" alt=""> Estrategista
+                </span>
+            </div>
+
+            <!-- Tab switcher -->
+            <div class="tab-bar">
+                <button class="tab-btn active" onclick="switchTab('main', this)">Elenco Principal</button>
+                <button class="tab-btn" onclick="switchTab('academy', this)">Elenco Academy</button>
+            </div>
+
+            <!-- ── MAIN LINEUP ── -->
+            <div id="tab-main" class="tab-panel active">
+                <div class="line-header">
+                    <span class="line-tag main">Principal</span>
+                    <h3>Elenco Principal</h3>
+                </div>
+                <div class="player-gallery">
+
+                    <div class="player-card player-card--vanguard">
+                        <img src="assets/Dr. Strange/Doctor_Strange_Default_Costume_LoC_Icon.webp" alt="Stabat">
+                        <p class="player-name">#Stabat</p>
+                        <p class="player-role">Vanguarda</p>
+                        <a href="https://x.com/Stabat_Dior" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--vanguard">
+                        <img src="assets/Magneto/Magneto_Master_of_Magnetism_LoC_Icon.webp" alt="kaka1932">
+                        <p class="player-name">#kaka1932</p>
+                        <p class="player-role">Vanguarda</p>
+                        <a href="https://x.com/kakahs__" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--vanguard">
+                        <img src="assets/Venom/Venom_Lingering_Imprint_LoC_Icon.webp" alt="MuriloWolf">
+                        <p class="player-name">#MuriloWolf</p>
+                        <p class="player-role">Vanguarda</p>
+                    </div>
+
+                    <div class="player-card player-card--duelist">
+                        <img src="assets/Psylocke/Psylocke_Default_Costume_LoC_Icon.webp" alt="LawLietRep">
+                        <p class="player-name">#LawLietRep</p>
+                        <p class="player-role">Duelista</p>
+                        <a href="https://x.com/LawLietRep" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--duelist">
+                        <img src="assets/Phoenix/Phoenix_Chaos_Phoenix_LoC_Icon.webp" alt="Pégasus">
+                        <p class="player-name">#Pégasus</p>
+                        <p class="player-role">Duelista</p>
+                        <a href="https://x.com/Pegasusbks" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--duelist">
+                        <img src="assets/Psylocke/Psylocke_Breezy_Butterfly_LoC_Icon.webp" alt="YamadaIGL">
+                        <p class="player-name">#YamadaIGL</p>
+                        <p class="player-role">Duelista</p>
+                        <a href="https://x.com/YamadaIGL" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--strategist">
+                        <img src="assets/Jeff/Jeff_the_Land_Shark_Sunshine_Land_Shark_LoC_Icon.webp" alt="Proto1233">
+                        <p class="player-name">#Proto1233</p>
+                        <p class="player-role">Estrategista</p>
+                        <a href="https://x.com/proto1233mrv" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--strategist">
+                        <img src="assets/Adam Warlock/Adam_Warlock_Blood_Soul_LoC_Icon.webp" alt="Felope">
+                        <p class="player-name">#Felope</p>
+                        <p class="player-role">Estrategista</p>
+                        <a href="https://x.com/felopeac" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--strategist">
+                        <img src="assets/Loki/Loki_Tidal_Trickery_LoC_Icon.webp" alt="notbarao">
+                        <p class="player-name">#notbarao</p>
+                        <p class="player-role">Estrategista</p>
+                        <a href="https://x.com/notbaraoo" target="_blank" class="media-button">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="player-card player-card--strategist">
+                        <img src="assets/Invisible Woman/Invisible_Woman_Malice_LoC_Icon.webp" alt="Sleek">
+                        <p class="player-name">#Sleek</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+
+                    <div class="player-card player-card--strategist">
+                        <img src="assets/Luna Snow/Luna_Snow_Shining_Star_LoC_Icon.webp" alt="Malosti">
+                        <p class="player-name">#Malosti</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ── ACADEMY LINEUP ── -->
+            <div id="tab-academy" class="tab-panel">
+                <div class="line-header">
+                    <span class="line-tag academy">Academy</span>
+                    <h3>Elenco Academy</h3>
+                </div>
+                <div class="player-gallery">
+
+                    <div class="player-card player-card--tbd">
+                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p class="player-name">Em breve</p>
+                    </div>
+
+                    <div class="player-card player-card--tbd">
+                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p class="player-name">Em breve</p>
+                    </div>
+
+                    <div class="player-card player-card--tbd">
+                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p class="player-name">Em breve</p>
+                    </div>
+
+                    <div class="player-card player-card--tbd">
+                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p class="player-name">Em breve</p>
+                    </div>
+
+                    <div class="player-card player-card--tbd">
+                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p class="player-name">Em breve</p>
+                    </div>
+
+                    <div class="player-card player-card--tbd">
+                        <div class="tbd-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p class="player-name">Em breve</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="red-line">
+
+    <footer id="footer">
+        <img src="assets/iconBKSGray.png" alt="BKS Esports" width="80px">
+    </footer>
+
+    <script>
+        function switchTab(name, btn) {
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('tab-' + name).classList.add('active');
+            btn.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
