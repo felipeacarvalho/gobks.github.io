@@ -1025,15 +1025,6 @@ p { font-size: 0.97rem; }
 
 .footer-inner .footer-icon { width: 72px; opacity: 0.85; }
 
-.footer-brand {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-.footer-brand span { color: var(--red); }
-
 .footer-copy {
   font-family: var(--font-cond);
   font-size: 0.85rem;
