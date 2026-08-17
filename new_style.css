@@ -124,12 +124,18 @@ p { font-size: 0.97rem; }
   height: 14px;
   background: linear-gradient(var(--border), var(--border)) center / 100% 1px no-repeat;
 }
+.slash-divider::before,
 .slash-divider::after {
   content: "";
   position: absolute;
   top: 0;
   height: 100%;
   clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+.slash-divider::before {
+  left: calc(50% - 36px);
+  width: 42px;
+  background: var(--red);
 }
 .slash-divider::after {
   left: calc(50% + 14px);
