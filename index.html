@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/iconBKS.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="new_style.css">
     <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
-    <title>BKS Esports - Início</title>
+    <title>BKS E-Sports - Início</title>
 </head>
 
 <body>
@@ -18,49 +19,52 @@
     <header id="header">
         <div class="header-inner">
             <a href="index.html" class="header-logo">
-                <img src="assets/logoBKSLetras.png" alt="BKS Esports">
+                <img src="assets/logoBKSLetras.png" alt="BKS E-Sports">
             </a>
             <nav class="header-nav">
                 <a href="index.html" class="nav-link active">Início</a>
-                <div class="dropdown">
-                    <button class="dropdown-btn">
-                        <i class="fa-solid fa-caret-down"></i> Conheça a BKS
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="lineups.html">Elencos</a>
-                    </div>
-                </div>
+                <a href="main-roster.html" class="nav-link">Elenco Principal</a>
+                <a href="academy-roster.html" class="nav-link">Academy</a>
+                <a href="achievements.html" class="nav-link">Conquistas</a>
                 <a href="form.html" class="btn-nav">Jogue Conosco</a>
             </nav>
         </div>
     </header>
 
-    <hr class="red-line">
-
     <!-- HERO -->
     <section id="hero">
+        <div class="hero-ghost">BKS</div>
         <div class="hero-inner">
             <div class="hero-text">
                 <div class="hero-badge">
                     <i class="fa-solid fa-bolt"></i> Marvel Rivals &middot; Time Competitivo
                 </div>
-                <h1>Domine o Campo de Batalha</h1>
+                <h1>Domine o campo <span class="stroke">de batalha</span></h1>
                 <p>Faça parte desta comunidade de Players de Marvel Rivals. Vamos competir, melhorar e dominar juntos!</p>
                 <div class="hero-actions">
-                    <a href="lineups.html" class="btn btn-primary">Conheça a Equipe</a>
+                    <a href="main-roster.html" class="btn btn-primary">Conheça a Equipe</a>
                     <a href="form.html" class="btn btn-secondary">Jogue Conosco</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/iconBKS.png" alt="BKS">
+                <img src="assets/iconBKS.png" alt="Logo da BKS E-Sports">
             </div>
         </div>
     </section>
 
+    <!-- MARQUEE BAND -->
+    <div class="marquee-band" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-chunk">BKS E-Sports<i>//</i><span class="stroke-soft">Ninguém segura a fera!</span><i>//</i>Resist to win!<i>//</i><span class="stroke-soft">#GoBKS</span><i>//</i>Essa selva é nossa!<i>//</i><span class="stroke-soft">Vamo BKS!</span><i>//</i></span>
+            <span class="marquee-chunk">BKS E-Sports<i>//</i><span class="stroke-soft">Ninguém segura a fera!</span><i>//</i>Resist to win!<i>//</i><span class="stroke-soft">#GoBKS</span><i>//</i>Essa selva é nossa!<i>//</i><span class="stroke-soft">Vamo BKS!</span><i>//</i></span>
+        </div>
+    </div>
+
     <!-- ABOUT -->
     <section class="section" id="about-section">
         <div class="container">
-            <div class="section-header center">
+            <div class="ghost-text">Sobre</div>
+            <div class="section-header">
                 <span class="section-label">Nossa equipe</span>
                 <h2>Sobre a BKS</h2>
                 <p>Conheça mais sobre o time e de como pode fazer parte dessa história.</p>
@@ -71,7 +75,7 @@
                     <h3>Nossa História</h3>
                     <p>A equipe foi fundada em maio de 2025 por jogadores apaixonados por Marvel Rivals, inicialmente apenas para diversão.</p>
                     <p>Ao passar do tempo decidimos elevar nossa <em>gameplay</em>. Hoje contamos com uma melhor organização, tendo melhorado, crescido e nos aproximado como um time.</p>
-                    <p>Nossa <em>lineup</em> mudou, cresceu e se adaptou — hoje contamos com dois elencos e nossos coaches que nos ajudam a criar e refinar estratégias.</p>
+                    <p>Nossa <em>lineup</em> mudou, cresceu e se adaptou. Hoje contamos com dois elencos e nossos coaches que nos ajudam a criar e refinar estratégias.</p>
                 </div>
 
                 <div class="text-box">
@@ -83,12 +87,12 @@
                         <li>Competir em torneios e representar a equipe e os fãs.</li>
                         <li>Crescer nossa comunidade.</li>
                     </ul>
-                    <p>Seja você um jogador casual, competitivo ou fã — há um lugar para você aqui!</p>
+                    <p>Seja você um jogador casual, competitivo ou fã, há um lugar para você aqui!</p>
                 </div>
             </div>
 
             <div class="form-cta-box">
-                <h3>Quer Fazer Parte?</h3>
+                <h3>Quer fazer parte?</h3>
                 <p>Preencha nosso formulário para se candidatar ao time, sugerir um scrim ou propor uma parceria.</p>
                 <a href="form.html" class="btn btn-primary">
                     Acessar Formulário <i class="fa-solid fa-arrow-right"></i>
@@ -97,113 +101,20 @@
         </div>
     </section>
 
-    <!-- THANKS -->
-    <section class="section" id="thanks-section">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-label">Agradecimentos</span>
-                <h2>Obrigado!</h2>
-                <p>Não estaríamos aqui sem o suporte, ajuda e dicas dessas incríveis pessoas, grupos e organizações.</p>
-            </div>
+    <hr class="slash-divider">
 
-            <span class="sub-label">Criadores de Conteúdo</span>
-            <div class="supporter-grid">
-                <div class="supporter-card">
-                    <div class="supporter-header">
-                        <img src="assets/supporter-images/contatoNerd.jpg" alt="Contato Nerd" class="circle-image">
-                        <div class="info">
-                            <h3>Contato Nerd</h3>
-                            <p>Host, Caster, Streamer e Youtuber</p>
-                        </div>
-                    </div>
-                    <div class="supporter-body">
-                        <p>Apoiador do time, host do nosso primeiro campeonato e comentarista durante as transmissões oficiais.</p>
-                        <div class="supporter-links">
-                            <a href="https://www.twitch.tv/marvelrivalsbrazuka" target="_blank" class="media-button"><i class="fa-brands fa-twitch"></i></a>
-                            <a href="https://www.youtube.com/@marvelrivalsbrazuka" target="_blank" class="media-button"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="supporter-card">
-                    <div class="supporter-header">
-                        <img src="assets/supporter-images/donosDoRivals.jpeg" alt="Donos do Rivals" class="circle-image">
-                        <div class="info">
-                            <h3>Donos do Rivals</h3>
-                            <p>Hosts, Casters, Streamers e Youtubers</p>
-                        </div>
-                    </div>
-                    <div class="supporter-body">
-                        <p>Canal de cobertura de campeonatos em que a BKS participou, prestando também apoio ao time.</p>
-                        <div class="supporter-links">
-                            <a href="https://www.youtube.com/@DonosdoRivals" target="_blank" class="media-button"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="supporter-card">
-                    <div class="supporter-header">
-                        <img src="assets/supporter-images/lariex.png" alt="Lariex" class="circle-image">
-                        <div class="info">
-                            <h3>Lariex</h3>
-                            <p>Streamer e Youtuber</p>
-                        </div>
-                    </div>
-                    <div class="supporter-body">
-                        <p>Criadora de conteúdo que esteve com a BKS desde o início, jogando com a equipe no lançamento do jogo.</p>
-                        <div class="supporter-links">
-                            <a href="https://www.twitch.tv/lariex" target="_blank" class="media-button"><i class="fa-brands fa-twitch"></i></a>
-                            <a href="https://www.youtube.com/@Lariex" target="_blank" class="media-button"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <span class="sub-label">Times Parceiros</span>
-            <div class="supporter-grid" style="max-width: 660px; margin-bottom: 56px;">
-                <div class="supporter-card">
-                    <div class="supporter-header">
-                        <img src="assets/supporter-images/teamNexus.png" alt="Team Nexus" class="circle-image">
-                        <div class="info">
-                            <h3>Team Nexus</h3>
-                            <p>Time Competitivo</p>
-                        </div>
-                    </div>
-                    <div class="supporter-body">
-                        <p>Time parceiro e rival em treinamentos que auxilia nas reviews de VODs e partidas.</p>
-                    </div>
-                </div>
-
-                <div class="supporter-card">
-                    <div class="supporter-header">
-                        <img src="assets/supporter-images/pucCampinasCardinals.png" alt="PUC Cardinals" class="circle-image">
-                        <div class="info">
-                            <h3>PUC Cardinals</h3>
-                            <p>Time Competitivo</p>
-                        </div>
-                    </div>
-                    <div class="supporter-body">
-                        <p>Time parceiro e rival em treinamentos.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="center">
-                <h2 style="margin-bottom: 10px;">Um Obrigado Especial.</h2>
-                <p style="color: var(--text-muted); margin-bottom: 24px;">Por fim, um muito obrigado a todos que nos acompanham nessa jornada e torcem pelo time durante as partidas.</p>
-                <div class="social-bar">
-                    <a href="https://discord.gg/2Ew5rmCx7S" target="_blank" class="media-button"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://x.com/bks_esportsmr" target="_blank" class="media-button"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/bks_esportsmr/" target="_blank" class="media-button"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <hr class="red-line">
-
+    <!-- FOOTER -->
     <footer id="footer">
-        <img src="assets/iconBKSGray.png" alt="BKS Esports" width="80px">
+        <div class="footer-inner">
+            <img src="assets/iconBKSGray.png" alt="" class="footer-icon">
+            <p class="footer-brand">BKS <span>E-Sports</span></p>
+            <div class="social-bar">
+                <a href="https://discord.gg/2Ew5rmCx7S" target="_blank" class="media-button"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://x.com/bks_esportsmr" target="_blank" class="media-button"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/bks_esportsmr/" target="_blank" class="media-button"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 BKS E-Sports &middot; Marvel Rivals</p>
+        </div>
     </footer>
 
 </body>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/iconBKS.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new_style.css">
+    <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
+    <title>Elenco Academy - BKS E-Sports</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <img src="assets/logoBKSLetras.png" alt="BKS E-Sports">
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="main-roster.html" class="nav-link">Elenco Principal</a>
+                <a href="academy-roster.html" class="nav-link active">Academy</a>
+                <a href="achievements.html" class="nav-link">Conquistas</a>
+                <a href="form.html" class="btn-nav">Jogue Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="ghost-text">Academy</div>
+            <div class="section-header">
+                <span class="section-label">Equipe</span>
+                <h2>Elenco <span class="stroke">Academy</span></h2>
+                <p>Nossa <em>line</em> de desenvolvimento, onde os <em>players</em> evoluem e se preparam para o elenco principal.</p>
+            </div>
+
+            <!-- Roster switcher -->
+            <div class="tab-bar">
+                <a href="main-roster.html" class="tab-btn">Elenco Principal</a>
+                <a href="academy-roster.html" class="tab-btn active">Elenco Academy</a>
+            </div>
+
+            <!-- Role filter badges -->
+            <div class="role-legend">
+                <button class="role-badge vanguard" data-filter="vanguard" onclick="toggleRole('vanguard', this)">
+                    <img src="assets/General/Vanguard_Icon.webp" alt=""> Vanguarda
+                </button>
+                <button class="role-badge duelist" data-filter="duelist" onclick="toggleRole('duelist', this)">
+                    <img src="assets/General/Duelist_Icon.webp" alt=""> Duelista
+                </button>
+                <button class="role-badge strategist" data-filter="strategist" onclick="toggleRole('strategist', this)">
+                    <img src="assets/General/Strategist_Icon.webp" alt=""> Estrategista
+                </button>
+            </div>
+
+            <div class="player-gallery">
+
+                <div class="player-card player-card--vanguard" data-role="vanguard">
+                    <a href="https://x.com/" target="_blank" class="media-button" aria-label="X de Coronel">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <div class="player-photo">
+                        <img src="assets/Dr. Strange/Doctor_Strange_Doctor_Strange_in_the_Multiverse_of_Madness_LoC_Icon.webp" alt="Coronel">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Coronel</p>
+                        <p class="player-role">Vanguarda</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--vanguard" data-role="vanguard">
+                    <div class="player-photo">
+                        <img src="" alt="Guardião">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Guardião</p>
+                        <p class="player-role">Vanguarda</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--vanguard" data-role="vanguard">
+                    <div class="player-photo">
+                        <img src="" alt="DelHighh">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># DelHighh</p>
+                        <p class="player-role">Vanguarda</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--duelist" data-role="duelist">
+                    <a href="https://x.com/yk1r4" target="_blank" class="media-button" aria-label="X de Akira">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <div class="player-photo">
+                        <img src="assets/Hela/Hela_Default_Costume_LoC_Icon.webp" alt="Akira">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Akira</p>
+                        <p class="player-role">Duelista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--duelist" data-role="duelist">
+                    <a href="https://x.com/DeadZerafps" target="_blank" class="media-button" aria-label="X de Deadzera">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <div class="player-photo">
+                        <img src="assets/Magik/Magik_Phoenix_Demon_LoC_Icon.webp" alt="Deadzera">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Deadzera</p>
+                        <p class="player-role">Duelista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--duelist" data-role="duelist">
+                    <div class="player-photo">
+                        <img src="" alt="YamadaIGL">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># YamadaIGL</p>
+                        <p class="player-role">Duelista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--strategist" data-role="strategist">
+                    <a href="https://x.com/Pegasusbks" target="_blank" class="media-button" aria-label="X de Pégasus">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <div class="player-photo">
+                        <img src="assets/Phoenix/Phoenix_Chaos_Phoenix_LoC_Icon.webp" alt="Pégasus">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Pégasus</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--strategist" data-role="strategist">
+                    <div class="player-photo">
+                        <img src="assets/Luna Snow/Luna_Snow_Shining_Star_LoC_Icon.webp" alt="Malosti">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Malosti</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--strategist" data-role="strategist">
+                    <div class="player-photo">
+                        <img src="" alt="Tata">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Tata</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="slash-divider">
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <img src="assets/iconBKSGray.png" alt="" class="footer-icon">
+            <p class="footer-brand">BKS <span>Esports</span></p>
+            <div class="social-bar">
+                <a href="https://discord.gg/2Ew5rmCx7S" target="_blank" class="media-button"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://x.com/bks_esportsmr" target="_blank" class="media-button"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/bks_esportsmr/" target="_blank" class="media-button"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 BKS E-Sports &middot; Marvel Rivals</p>
+        </div>
+    </footer>
+
+    <script src="roster.js"></script>
+
+</body>
+
+</html>
