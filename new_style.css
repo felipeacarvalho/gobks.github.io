@@ -637,6 +637,17 @@ p { font-size: 0.97rem; }
   position: relative;
   z-index: 1;
 }
+.sub-label::before {
+  content: "";
+  width: 26px;
+  height: 12px;
+  background: repeating-linear-gradient(
+    115deg,
+    var(--text-muted) 0 5px,
+    transparent 5px 11px
+  );
+  opacity: 0.6;
+}
 
 /* ── Thanks section ── */
 #thanks-section {
