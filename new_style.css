@@ -821,6 +821,34 @@ p { font-size: 0.97rem; }
   margin-bottom: 1px;
 }
 
+/* ── Nicknames — the in-game handles, under the real name.
+   Sentence case against the uppercase name, with the accent "#" that the
+   roster pages already use before a handle. ── */
+.player-nicks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 10px;
+  margin-top: 1px;
+}
+
+.player-nick {
+  font-family: var(--font-cond);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  transition: color 0.25s;
+}
+
+.player-nick::before {
+  content: "#";
+  margin-right: 1px;
+  color: var(--card-accent);
+}
+
+.player-card:hover .player-nick { color: var(--text); }
+
 .player-role {
   font-family: var(--font-cond);
   font-size: 0.85rem;
@@ -1035,6 +1063,133 @@ p { font-size: 0.97rem; }
 }
 
 #footer .social-bar { margin-top: 4px; }
+
+/* ═══════════════ STAFF PAGE ═══════════════ */
+
+/* ── Sector sections ── */
+.staff-section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 54px;
+  --sector-accent:      var(--red);
+  --sector-accent-soft: rgba(225, 29, 42, 0.12);
+}
+
+.staff-section--board {
+  --sector-accent:      #e11d2a;
+  --sector-accent-soft: rgba(225, 29, 42, 0.12);
+}
+.staff-section--media {
+  --sector-accent:      #945aca;
+  --sector-accent-soft: rgba(148, 90, 202, 0.13);
+}
+.staff-section--coaching {
+  --sector-accent:      #eea826;
+  --sector-accent-soft: rgba(238, 168, 38, 0.12);
+}
+
+/* sector filter hidden state */
+.staff-section.sector-hidden { display: none; }
+
+/* ── Sector heading — hatch tick, title, count, hairline rule ── */
+.staff-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+/* hatch tick in the sector colour, echoing .sub-label */
+.staff-heading::before {
+  content: "";
+  flex-shrink: 0;
+  width: 26px;
+  height: 13px;
+  background: repeating-linear-gradient(
+    115deg,
+    var(--sector-accent) 0 5px,
+    transparent 5px 11px
+  );
+}
+
+/* rule that runs out to the edge of the grid */
+.staff-heading::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.staff-heading h3 { flex-shrink: 0; }
+
+.staff-count {
+  flex-shrink: 0;
+  font-family: var(--font-cond);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sector-accent);
+  background: var(--sector-accent-soft);
+  padding: 2px 11px;
+  clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%);
+}
+
+/* Sectors hold few people, so cap the card width instead of letting three
+   cards stretch across the whole row. Below 640px the .player-gallery rule
+   in the responsive block takes over and cards fill the width again. */
+.staff-gallery { grid-template-columns: repeat(auto-fit, minmax(196px, 264px)); }
+
+/* ── Sector card accents ── */
+.player-card--board {
+  --card-accent:      #e11d2a;
+  --card-accent-soft: rgba(225, 29, 42, 0.14);
+  --card-accent-ink:  #fff;
+}
+.player-card--media {
+  --card-accent:      #945aca;
+  --card-accent-soft: rgba(148, 90, 202, 0.15);
+  --card-accent-ink:  #fff;
+}
+.player-card--coaching {
+  --card-accent:      #eea826;
+  --card-accent-soft: rgba(238, 168, 38, 0.14);
+  --card-accent-ink:  #17150f;
+}
+
+/* ── Multiple roles per member ── */
+.player-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 7px;
+}
+
+.role-tag {
+  font-family: var(--font-cond);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.55;
+  text-transform: uppercase;
+  padding: 1px 10px;
+  color: var(--card-accent);
+  background: var(--card-accent-soft);
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+}
+
+/* primary role — filled, the rest stay soft */
+.role-tag--lead {
+  color: var(--card-accent-ink, #fff);
+  background: var(--card-accent);
+}
+
+/* ── Sector filter badges ── */
+.role-badge i { font-size: 0.85rem; }
+
+.role-badge.sector-board    { background: rgba(225, 29, 42, 0.12);  color: #ff5560; }
+.role-badge.sector-media    { background: rgba(148, 90, 202, 0.13); color: #b07fdd; }
+.role-badge.sector-coaching { background: rgba(238, 168, 38, 0.12); color: #eea826; }
 
 /* ═══════════════ RESPONSIVE ═══════════════ */
 

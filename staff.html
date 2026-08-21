@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/iconBKS.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new_style.css">
+    <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
+    <title>Staff - BKS E-Sports</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <img src="assets/logoBKSLetras.png" alt="BKS E-Sports">
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="main-roster.html" class="nav-link">Elenco Principal</a>
+                <a href="academy-roster.html" class="nav-link">Academy</a>
+                <a href="achievements.html" class="nav-link">Conquistas</a>
+                <a href="staff.html" class="nav-link active">Staff</a>
+                <a href="form.html" class="btn-nav">Jogue Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="ghost-text">Staff</div>
+            <div class="section-header">
+                <span class="section-label">Bastidores</span>
+                <h2>Nosso <span class="stroke">Staff</span></h2>
+                <p>Quem faz a BKS acontecer fora do servidor. Os membros que sustentam os nossos elencos.</p>
+            </div>
+
+            <!-- Sector filter badges -->
+            <div class="role-legend">
+                <button class="role-badge sector-board" data-filter="board" onclick="toggleSector('board', this)">
+                    <i class="fa-solid fa-chess-king"></i> Diretoria
+                </button>
+                <button class="role-badge sector-media" data-filter="media" onclick="toggleSector('media', this)">
+                    <i class="fa-solid fa-camera"></i> Mídia
+                </button>
+                <button class="role-badge sector-coaching" data-filter="coaching" onclick="toggleSector('coaching', this)">
+                    <i class="fa-solid fa-clipboard-list"></i> Comissão Técnica
+                </button>
+            </div>
+
+            <!--
+                ─────────────────────────────────────────────────────────────
+                COMO ADICIONAR UM MEMBRO
+
+                Copie um bloco .player-card inteiro para dentro do
+                .player-gallery do setor e troque nome, foto e funções.
+
+                • Apelidos: o nome real fica no .player-name e cada apelido
+                  é um <span class="player-nick"> dentro de .player-nicks. O
+                  "#" vem do CSS. Sem apelido, remova o .player-nicks inteiro.
+
+                • Funções múltiplas: basta acrescentar mais <span class="role-tag">
+                  dentro de .player-roles. A primeira leva role-tag--lead
+                  (função principal, preenchida); as demais ficam suaves.
+
+                • Membro em mais de um setor: repita o card na seção do outro
+                  setor, trocando a classe player-card--<setor> e listando ali
+                  só as funções daquele setor. Veja "nome-do-membro-1", que
+                  aparece em Diretoria e em Mídia.
+
+                • Foto: aponte o src para um arquivo em assets/. Deixando
+                  src="" o roster.js coloca o ícone de silhueta no lugar.
+
+                • Novo setor: copie uma <section class="staff-section ...">
+                  inteira, escolha um data-sector novo e adicione o botão
+                  correspondente no .role-legend acima. O filtro é genérico e
+                  passa a funcionar sozinho; só as cores do setor precisam de
+                  um bloco novo em new_style.css.
+                ─────────────────────────────────────────────────────────────
+            -->
+
+            <!-- ── DIRETORIA ── -->
+            <section class="staff-section staff-section--board" data-sector="board">
+                <div class="staff-heading">
+                    <h3>Diretoria</h3>
+                    <span class="staff-count">3 membros</span>
+                </div>
+
+                <div class="player-gallery staff-gallery">
+
+                    <div class="player-card player-card--board">
+                        <a href="https://x.com/kakahs__" target="_blank" class="media-button" aria-label="X de Kaique">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <div class="player-photo">
+                            <img src="" alt="Kaique">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Kaique</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">kaka</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Diretor</span>
+                                <span class="role-tag role-tag--lead">Fundador</span>
+                                <span class="role-tag">Capitão</span>
+                                <span class="role-tag">Jogador</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-card player-card--board">
+                        <a href="https://x.com/felopeac" target="_blank" class="media-button" aria-label="X de Felipe">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <div class="player-photo">
+                            <img src="" alt="Felipe">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Felipe</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Felope</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Diretor</span>
+                                <span class="role-tag role-tag--lead">Fundador</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-card player-card--board">
+                        <div class="player-photo">
+                            <img src="" alt="Marcelo">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Marcelo</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Pégasus</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Gerente</span>
+                                <span class="role-tag">Jogador</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── MÍDIA ── -->
+            <section class="staff-section staff-section--media" data-sector="media">
+                <div class="staff-heading">
+                    <h3>Mídia</h3>
+                    <span class="staff-count">3 membros</span>
+                </div>
+
+                <div class="player-gallery staff-gallery">
+
+                    <div class="player-card player-card--media">
+                        <a href="https://x.com/jeisyrocha" target="_blank" class="media-button" aria-label="X de Jeisy">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <div class="player-photo">
+                            <img src="" alt="Jeisy">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Jeisy</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Jee</span>
+                                <span class="player-nick">WeLoveJee</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Diretora de Mídia</span>
+                                <span class="role-tag role-tag--lead">Host</span>
+                                <span class="role-tag">Caster</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-card player-card--media">
+                        <a href="https://x.com/oContatoNerd" target="_blank" class="media-button" aria-label="X de Murilo">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <div class="player-photo">
+                            <img src="" alt="nome-do-membro-4">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Murilo</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Contato</span>
+                                <span class="player-nick">Contato Nerd</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Vice-Diretor de Mídia</span>
+                                <span class="role-tag role-tag--lead">Host</span>
+                                <span class="role-tag">Caster</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-card player-card--media">
+                        <div class="player-photo">
+                            <img src="" alt="Mathias">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Mathias</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Dilo</span>
+                                <span class="player-nick">TheDilo100</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Editor</span>
+                                <span class="role-tag role-tag--lead">Artista</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── COMISSÃO TÉCNICA ── -->
+            <section class="staff-section staff-section--coaching" data-sector="coaching">
+                <div class="staff-heading">
+                    <h3>Comissão Técnica</h3>
+                    <span class="staff-count">3 membros</span>
+                </div>
+
+                <div class="player-gallery staff-gallery">
+
+                    <div class="player-card player-card--coaching">
+                        <a href="https://x.com/daannFps" target="_blank" class="media-button" aria-label="X de Daniel">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <div class="player-photo">
+                            <img src="" alt="Daniel">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Daniel</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Dan</span>
+                                <span class="player-nick">DaannFPS</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Head Coach</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-card player-card--coaching">
+                        <a href="https://x.com/littleFuzzyy" target="_blank" class="media-button" aria-label="X de Nicholas">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <div class="player-photo">
+                            <img src="" alt="Nicholas">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Nicholas</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Fuzzy</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Coach</span>
+                                <span class="role-tag role-tag--lead">Manager</span>
+                                <span class="role-tag">Analista</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-card player-card--coaching">
+                        <a href="https://x.com/Its_Kaiser_" target="_blank" class="media-button" aria-label="X de Bel">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <div class="player-photo">
+                            <img src="" alt="Bel">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Bel</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Kaiser</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Assistente Coach</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-card player-card--coaching">
+                        <div class="player-photo">
+                            <img src="" alt="Ricardo">
+                        </div>
+                        <div class="player-info">
+                            <p class="player-name">Ricardo</p>
+                            <p class="player-nicks">
+                                <span class="player-nick">Riiiickss</span>
+                            </p>
+                            <div class="player-roles">
+                                <span class="role-tag role-tag--lead">Nutricionista Esportivo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="form-cta-box">
+                <h3>Quer entrar pra equipe?</h3>
+                <p>A BKS está sempre aberta a quem quer ajudar dentro e fora do jogo.</p>
+                <a href="form.html" class="btn btn-primary">
+                    Acessar Formulário <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="slash-divider">
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <img src="assets/iconBKSGray.png" alt="" class="footer-icon">
+            <div class="social-bar">
+                <a href="https://discord.gg/2Ew5rmCx7S" target="_blank" class="media-button"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://x.com/bks_esportsmr" target="_blank" class="media-button"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/bks_esportsmr/" target="_blank" class="media-button"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 BKS E-Sports &middot; Marvel Rivals</p>
+        </div>
+    </footer>
+
+    <script src="roster.js"></script>
+
+</body>
+
+</html>
