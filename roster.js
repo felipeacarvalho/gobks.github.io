@@ -18,6 +18,24 @@ function applyFilter() {
     });
 }
 
+// ── Staff sector filter ──
+// Generic: reads the sector off the button, so a new sector only needs its
+// markup (a .role-legend button + a matching .staff-section[data-sector]).
+const hiddenSectors = new Set();
+
+function toggleSector(sector, btn) {
+    const hide = !hiddenSectors.has(sector);
+    if (hide) {
+        hiddenSectors.add(sector);
+    } else {
+        hiddenSectors.delete(sector);
+    }
+    btn.classList.toggle('inactive', hide);
+    document.querySelectorAll(`.staff-section[data-sector="${sector}"]`).forEach(section => {
+        section.classList.toggle('sector-hidden', hide);
+    });
+}
+
 // ── Image placeholders ──
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.player-card .player-photo img').forEach(img => {
