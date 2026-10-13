@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/iconBKS.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new_style.css">
+    <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
+    <title>BKS Lunaris - BKS E-Sports</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <img src="assets/logoBKSLetras.png" alt="BKS E-Sports">
+            </a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="main-roster.html" class="nav-link">Elenco Principal</a>
+                <a href="academy-roster.html" class="nav-link">Academy</a>
+                <a href="lunaris-roster.html" class="nav-link active">Lunaris</a>
+                <a href="achievements.html" class="nav-link">Conquistas</a>
+                <a href="staff.html" class="nav-link">Staff</a>
+                <a href="form.html" class="btn-nav">Jogue Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section theme-lunaris">
+        <div class="container">
+            <div class="ghost-text">Lunaris</div>
+            <div class="section-header">
+                <span class="section-label">Equipe</span>
+                <h2>Elenco <span class="stroke">Lunaris</span></h2>
+                <p>Nossa <em>line</em> inclusiva, um espaço acolhedor para mais <em>players</em> que se identificam com a causa e almejam o cenário competitivo.</p>
+            </div>
+
+            <!-- Roster switcher -->
+            <div class="tab-bar">
+                <a href="main-roster.html" class="tab-btn">Elenco Principal</a>
+                <a href="academy-roster.html" class="tab-btn">Elenco Academy</a>
+                <a href="lunaris-roster.html" class="tab-btn active">Elenco Lunaris</a>
+            </div>
+
+            <!-- Role filter badges -->
+            <div class="role-legend">
+                <button class="role-badge vanguard" data-filter="vanguard" onclick="toggleRole('vanguard', this)">
+                    <img src="assets/General/Vanguard_Icon.webp" alt=""> Vanguarda
+                </button>
+                <button class="role-badge duelist" data-filter="duelist" onclick="toggleRole('duelist', this)">
+                    <img src="assets/General/Duelist_Icon.webp" alt=""> Duelista
+                </button>
+                <button class="role-badge strategist" data-filter="strategist" onclick="toggleRole('strategist', this)">
+                    <img src="assets/General/Strategist_Icon.webp" alt=""> Estrategista
+                </button>
+            </div>
+
+            <div class="player-gallery">
+
+                <div class="player-card player-card--vanguard" data-role="vanguard">
+                    <div class="player-photo">
+                        <img src="assets\The Hood\CosInfo_-_The_Hood_Sinful_Blackout_Icon.webp" alt="Artois">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Artois</p>
+                        <p class="player-role">Vanguarda</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--vanguard" data-role="vanguard">
+                    <div class="player-photo">
+                        <img src="assets\Emma Frost\CosInfo_-_Emma_Frost_Glittering_Goddess_Icon.webp" alt="Gabi">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Gabi</p>
+                        <p class="player-role">Vanguarda</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--vanguard" data-role="vanguard">
+                    <div class="player-photo">
+                        <img src="assets\Peni Parker\CosInfo_-_Peni_Parker_Badlands_Lullaby_Icon.webp" alt="Harajuku">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Harajuku</p>
+                        <p class="player-role">Vanguarda</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--duelist" data-role="duelist">
+                    <div class="player-photo">
+                        <img src="assets\Psylocke\CosInfo_-_Psylocke_Breezy_Butterfly_Icon.webp" alt="dudafps">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># dudafps</p>
+                        <p class="player-role">Duelista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--duelist" data-role="duelist">
+                    <div class="player-photo">
+                        <img src="assets\Iron Fist\CosInfo_-_Iron_Fist_Blackened_Rage_Icon.webp" alt="Mágica">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Mágica</p>
+                        <p class="player-role">Duelista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--duelist" data-role="duelist">
+                    <span class="rank-badge rank-badge--captain" tabindex="0" aria-label="Capitã">
+                        <i class="fa-solid fa-crown"></i>
+                    </span>
+                    <span class="rank-tip" aria-hidden="true">Capitã</span>
+                    <div class="player-photo">
+                        <img src="assets\Magik\CosInfo_-_Magik_New_Millennia_Might_Icon.webp" alt="Mille">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Mille</p>
+                        <p class="player-role">Duelista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--strategist" data-role="strategist">
+                    <span class="rank-badge rank-badge--vice" tabindex="0" aria-label="Vice-Capitã">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+                    <span class="rank-tip" aria-hidden="true">Vice-Capitã</span>
+                    <div class="player-photo">
+                        <img src="assets\Invisible Woman\CosInfo_-_Invisible_Woman_Malice_Icon.webp" alt="Gabs&lt;3">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Gabs&lt;3</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--strategist" data-role="strategist">
+                    <div class="player-photo">
+                        <img src="assets\Gambit\CosInfo_-_Gambit_Alluring_Ace_Icon.webp" alt="Honda">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Honda</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--strategist" data-role="strategist">
+                    <div class="player-photo">
+                        <img src="assets\Luna Snow\CosInfo_-_Luna_Snow_Sonic_Trailblazer_Icon.webp" alt="Nobreza">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Nobreza</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="slash-divider">
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <img src="assets/iconBKSGray.png" alt="" class="footer-icon">
+            <div class="social-bar">
+                <a href="https://discord.gg/2Ew5rmCx7S" target="_blank" class="media-button"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://x.com/bks_esportsmr" target="_blank" class="media-button"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/bks_esportsmr/" target="_blank" class="media-button"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 BKS E-Sports &middot; Marvel Rivals</p>
+        </div>
+    </footer>
+
+    <script src="roster.js"></script>
+
+</body>
+
+</html>

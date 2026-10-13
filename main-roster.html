@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="new_style.css">
+    <!-- cross-fade ao trocar de elenco (as cores de cada line se misturam) -->
+    <style>@media (prefers-reduced-motion: no-preference) { @view-transition { navigation: auto; } }</style>
     <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
     <title>Elenco Principal - BKS E-Sports</title>
 </head>
@@ -25,6 +27,7 @@
                 <a href="index.html" class="nav-link">Início</a>
                 <a href="main-roster.html" class="nav-link active">Elenco Principal</a>
                 <a href="academy-roster.html" class="nav-link">Academy</a>
+                <a href="lunaris-roster.html" class="nav-link">Lunaris</a>
                 <a href="achievements.html" class="nav-link">Conquistas</a>
                 <a href="staff.html" class="nav-link">Staff</a>
                 <a href="form.html" class="btn-nav">Jogue Conosco</a>
@@ -32,19 +35,20 @@
         </div>
     </header>
 
-    <section class="section">
+    <section class="section roster-glow">
         <div class="container">
             <div class="ghost-text">Principal</div>
             <div class="section-header">
                 <span class="section-label">Equipe</span>
                 <h2>Elenco <span class="stroke">Principal</span></h2>
-                <p>Nossa <em>line</em> principal, que representa a BKS nas competições oficiais.</p>
+                <p>Nossa <em>line</em> principal, que representa a BKS nas competições e torneios oficiais.</p>
             </div>
 
             <!-- Roster switcher -->
             <div class="tab-bar">
                 <a href="main-roster.html" class="tab-btn active">Elenco Principal</a>
                 <a href="academy-roster.html" class="tab-btn">Elenco Academy</a>
+                <a href="lunaris-roster.html" class="tab-btn">Elenco Lunaris</a>
             </div>
 
             <!-- Role filter badges -->
@@ -63,6 +67,10 @@
             <div class="player-gallery">
 
                 <div class="player-card player-card--vanguard" data-role="vanguard">
+                    <span class="rank-badge rank-badge--captain" tabindex="0" aria-label="Capitão">
+                        <i class="fa-solid fa-crown"></i>
+                    </span>
+                    <span class="rank-tip" aria-hidden="true">Capitão</span>
                     <a href="https://x.com/kakahs__" target="_blank" class="media-button" aria-label="X de kaka1932">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
@@ -77,34 +85,11 @@
 
                 <div class="player-card player-card--vanguard" data-role="vanguard">
                     <div class="player-photo">
-                        <img src="assets/Venom/CosInfo_-_Venom_Lingering_Imprint_Icon.webp" alt="MuriloWolf">
-                    </div>
-                    <div class="player-info">
-                        <p class="player-name"># MuriloWolf</p>
-                        <p class="player-role">Vanguarda</p>
-                    </div>
-                </div>
-
-                <div class="player-card player-card--vanguard" data-role="vanguard">
-                    <div class="player-photo">
                         <img src="assets/Captain America/CosInfo_-_Captain_America_Avengers_Infinity_War_Icon.webp" alt="Proto1233">
                     </div>
                     <div class="player-info">
                         <p class="player-name"># Proto1233</p>
                         <p class="player-role">Vanguarda</p>
-                    </div>
-                </div>
-
-                <div class="player-card player-card--duelist" data-role="duelist">
-                    <a href="https://x.com/LawLietRep" target="_blank" class="media-button" aria-label="X de LawLietRep">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <div class="player-photo">
-                        <img src="assets/Psylocke/CosInfo_-_Psylocke_Fleeting_Butterfly_Icon.webp" alt="LawLietRep">
-                    </div>
-                    <div class="player-info">
-                        <p class="player-name"># LawLietRep</p>
-                        <p class="player-role">Duelista</p>
                     </div>
                 </div>
 
@@ -132,6 +117,10 @@
                 </div>
 
                 <div class="player-card player-card--strategist" data-role="strategist">
+                    <span class="rank-badge rank-badge--vice" tabindex="0" aria-label="Vice-capitão">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+                    <span class="rank-tip" aria-hidden="true">Vice-capitão</span>
                     <a href="https://x.com/notbaraoo" target="_blank" class="media-button" aria-label="X de notbarao">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>

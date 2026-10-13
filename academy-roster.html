@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="new_style.css">
+    <!-- cross-fade ao trocar de elenco (as cores de cada line se misturam) -->
+    <style>@media (prefers-reduced-motion: no-preference) { @view-transition { navigation: auto; } }</style>
     <script src="https://kit.fontawesome.com/8978e34aae.js" crossorigin="anonymous"></script>
     <title>Elenco Academy - BKS E-Sports</title>
 </head>
@@ -25,6 +27,7 @@
                 <a href="index.html" class="nav-link">Início</a>
                 <a href="main-roster.html" class="nav-link">Elenco Principal</a>
                 <a href="academy-roster.html" class="nav-link active">Academy</a>
+                <a href="lunaris-roster.html" class="nav-link">Lunaris</a>
                 <a href="achievements.html" class="nav-link">Conquistas</a>
                 <a href="staff.html" class="nav-link">Staff</a>
                 <a href="form.html" class="btn-nav">Jogue Conosco</a>
@@ -32,7 +35,7 @@
         </div>
     </header>
 
-    <section class="section">
+    <section class="section roster-glow">
         <div class="container">
             <div class="ghost-text">Academy</div>
             <div class="section-header">
@@ -45,6 +48,7 @@
             <div class="tab-bar">
                 <a href="main-roster.html" class="tab-btn">Elenco Principal</a>
                 <a href="academy-roster.html" class="tab-btn active">Elenco Academy</a>
+                <a href="lunaris-roster.html" class="tab-btn">Elenco Lunaris</a>
             </div>
 
             <!-- Role filter badges -->
@@ -63,6 +67,10 @@
             <div class="player-gallery">
 
                 <div class="player-card player-card--vanguard" data-role="vanguard">
+                    <span class="rank-badge rank-badge--vice" tabindex="0" aria-label="Vice-capitão">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+                    <span class="rank-tip" aria-hidden="true">Vice-capitão</span>
                     <a href="https://x.com/" target="_blank" class="media-button" aria-label="X de Coronel">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
@@ -87,10 +95,10 @@
 
                 <div class="player-card player-card--vanguard" data-role="vanguard">
                     <div class="player-photo">
-                        <img src="assets/Emma Frost/CosInfo_-_Emma_Frost_Phoenix_Diamond_Icon.webp" alt="DelHighh">
+                        <img src="assets/Venom/CosInfo_-_Venom_Lingering_Imprint_Icon.webp" alt="MuriloWolf">
                     </div>
                     <div class="player-info">
-                        <p class="player-name"># DelHighh</p>
+                        <p class="player-name"># MuriloWolf</p>
                         <p class="player-role">Vanguarda</p>
                     </div>
                 </div>
@@ -132,6 +140,30 @@
                 </div>
 
                 <div class="player-card player-card--strategist" data-role="strategist">
+                    <div class="player-photo">
+                        <img src="assets\Luna Snow\CosInfo_-_Luna_Snow_Citrus_Spark_Icon.webp" alt="Elisa Ro7">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Elisa Ro7</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--strategist" data-role="strategist">
+                    <div class="player-photo">
+                        <img src="assets\Invisible Woman\CosInfo_-_Invisible_Woman_Azure_Shade_Icon.webp" alt="Marina">
+                    </div>
+                    <div class="player-info">
+                        <p class="player-name"># Marina</p>
+                        <p class="player-role">Estrategista</p>
+                    </div>
+                </div>
+
+                <div class="player-card player-card--strategist" data-role="strategist">
+                    <span class="rank-badge rank-badge--captain" tabindex="0" aria-label="Capitão">
+                        <i class="fa-solid fa-crown"></i>
+                    </span>
+                    <span class="rank-tip" aria-hidden="true">Capitão</span>
                     <a href="https://x.com/Pegasusbks" target="_blank" class="media-button" aria-label="X de Pégasus">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
@@ -140,16 +172,6 @@
                     </div>
                     <div class="player-info">
                         <p class="player-name"># Pégasus</p>
-                        <p class="player-role">Estrategista</p>
-                    </div>
-                </div>
-
-                <div class="player-card player-card--strategist" data-role="strategist">
-                    <div class="player-photo">
-                        <img src="assets/Luna Snow/CosInfo_-_Luna_Snow_Shining_Star_Icon.webp" alt="Malosti">
-                    </div>
-                    <div class="player-info">
-                        <p class="player-name"># Malosti</p>
                         <p class="player-role">Estrategista</p>
                     </div>
                 </div>
